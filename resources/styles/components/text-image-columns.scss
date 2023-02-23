@@ -1,0 +1,21 @@
+.component-text-image-columns {
+    margin-top: 60px;
+}
+
+.text-image-columns {
+    position: relative;
+    
+    &--text {
+        padding: 100px 40px 100px 0;
+    }
+
+    &--image {
+        background-position: right top; 
+        background-repeat: no-repeat; 
+        background-size: contain;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+    }
+}

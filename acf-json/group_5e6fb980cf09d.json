@@ -1,0 +1,43 @@
+{
+    "key": "group_5e6fb980cf09d",
+    "title": "Service: Areas of Focus",
+    "fields": [
+        {
+            "key": "field_5e6fb9df13034",
+            "label": "Areas of Focus Heading",
+            "name": "service_area_focus_heading",
+            "type": "text",
+            "instructions": "Optional: customize the heading above the \"Areas of Focus\" accordion. A default value of \"Areas of Focus\" will be used if left blank and if terms are applied.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Areas of Focus",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "services"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1584380548
+}

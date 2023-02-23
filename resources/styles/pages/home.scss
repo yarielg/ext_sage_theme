@@ -1,0 +1,32 @@
+.our-people-banner {
+	
+	.banner-btn {
+		background-color: $blue !important;
+
+		&:hover {
+			background-color: #fff !important;
+			color: $blue !important;
+		}
+	}
+}
+
+.home-guide {
+
+	.image-link:hover {
+		transform: scale(1.05);
+		box-shadow: 0 0 24px rgba(0, 0, 0, 1);
+    	transition: all 0.15s ease;
+
+		.image-link--overlay {
+			background: rgba(255, 255, 255, 0.7);
+		}
+
+		.image-link--text {
+			text-shadow: none;
+		}
+	}
+
+	.image-link--text {
+		font-size: 36px;
+	}
+}

@@ -1,0 +1,32 @@
+.profile-header {
+    background-color: $blue;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+
+    .btn-vcard {
+        margin-left: 10px;
+    }
+}
+
+.print-professional-wrapper, .print-experience-wrapper, .print-new-wrapper, .print-event-wrapper {
+	display: none;
+}
+
+.profile-sidebar {
+
+    .list-group-item {
+        border: none;
+    }
+
+    .accordion-item {
+        font-size: 16px;
+        line-height: 22px;
+        font-family: $font-normal;
+        @include media-breakpoint-up(md) {
+          font-size: 18px;
+          line-height: 26px;
+        }
+    }
+}

@@ -1,0 +1,87 @@
+{
+    "key": "group_6351bbd8de32a",
+    "title": "Industry: Information",
+    "fields": [
+        {
+            "key": "field_6351bbd8e67c2",
+            "label": "Display Name",
+            "name": "industry_name",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6351bbd8e67d0",
+            "label": "Summary",
+            "name": "industry_summary",
+            "type": "wysiwyg",
+            "instructions": "The summary text only shown on the Services index page for \"parent\" services, limited to 250 characters.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "delay": 0,
+            "tabs": "visual",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_6351bbd8e67e0",
+            "label": "Hero",
+            "name": "industry_hero",
+            "type": "image",
+            "instructions": "Dimensions should be at least 1200 x 360. A default image will be used if one is not provided.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_width": 1200,
+            "min_height": 360,
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "thumbnail"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "industries"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1666302386
+}

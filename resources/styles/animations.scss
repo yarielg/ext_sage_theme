@@ -1,0 +1,36 @@
+/*
+ * Override Animation Styles w/ WOW.js and Animate.css
+ *
+ * Example usage in view: `<section class="wow animate__fadeInLeft">This will fade in from left.</section>`
+ * 
+ */
+
+// Prevent flicker on page load...
+.wow { visibility: hidden; }
+
+// Customize distance "traveled" for the fadeInDown animation
+@keyframes fadeInDown {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20px, 0); // -100%
+	}
+
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+
+// Customize distance "traveled" for the fadeInUp animation
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0); // 100%
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

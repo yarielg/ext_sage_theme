@@ -1,0 +1,93 @@
+
+.archive-staff {
+  margin-bottom: 2rem;
+}
+
+
+.staff-group-title {
+  padding-top: 60px;
+  margin-bottom: 2.25rem;
+  @include media-breakpoint-up(lg) {
+    padding-top: 146px;
+    margin-bottom: 4rem;
+  }
+  .banner-title {
+    font-family: $font-bold;
+    font-size: 36px;
+    line-height: 42px;
+    @include media-breakpoint-up(lg) {
+      font-size: 42px;
+      line-height: 56px;
+    }
+  }
+}
+
+.card-staff {
+  border: 1px solid #a2a2a2;
+  .staff-name {
+    color: $secondary;
+    font-size: 18px;
+    line-height: 20px;
+    font-family: $font-bold;
+    letter-spacing: 0.6px;
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    @include media-breakpoint-up(sm) {
+      font-size: 20px;
+      line-height: 16px;
+    }
+    @include media-breakpoint-up(md) {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+
+  .job-title {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.45px;
+    @include media-breakpoint-up(md) {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 110px;
+    }
+  }
+
+  .phone {
+    font-family: $font-bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.45px;
+    margin-bottom: 0.75rem;
+    @include media-breakpoint-up(md) {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .btn {
+    color: $secondary;
+    text-decoration: none;
+    font-family: $font-bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.68px;
+    &:hover {
+      text-decoration: underline;
+    }
+    @include media-breakpoint-up(md) {
+      font-size: 18px;
+      line-height: 23px;
+    }
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}

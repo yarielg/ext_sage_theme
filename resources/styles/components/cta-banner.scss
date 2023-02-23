@@ -1,0 +1,46 @@
+.cta-banner {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+
+    &--color-scheme-gold {
+        background: $yellow;
+        color: $white;
+    }
+
+    &--color-scheme-blue {
+        background: $blue;
+        color: $white;
+    }
+    
+    .cta-banner-btn {
+        font-size: 1rem;
+        line-height: 24px;
+        font-family: $font-bold;
+        text-decoration: none;
+        width: 100%;
+        color: $white;
+        letter-spacing: 2px;
+        padding: 36px 36px 30px;
+        
+        @include media-breakpoint-up(sm) {
+            font-size: 1.5rem;
+            line-height: 30px;
+        }
+        
+        @include media-breakpoint-up(md) {
+            font-size: 2rem;
+            line-height: 36px;
+        }
+        
+        &:hover {
+            text-decoration: underline;
+        }
+
+    }
+}
+
+.text-white > .cta-banner-btn {
+    color: $white !important;
+}

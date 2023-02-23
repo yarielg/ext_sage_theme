@@ -1,0 +1,531 @@
+.page-template {
+
+  &-template-news-results {
+    .read-more.btn-link {
+      text-transform: uppercase;
+    }
+  }
+
+
+  &-template-capabilities {
+    .banner {
+      .btn {
+        @include button-outline-variant($color: $white);
+      }
+    }///.section-1
+
+    .grid-capabilities {
+      .filters {
+        position: relative;
+
+        .filters-label {
+          position: absolute;
+          top: -25px;
+        }
+
+        .btn {
+          font-family: $font-bold;
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 0.68px;
+          padding: 1rem;
+          &:first-of-type {
+            margin-right: 20px;
+          }
+          @include media-breakpoint-up(sm) {
+            font-size: 17px;
+            line-height: 21px;
+          }
+          @include media-breakpoint-up(md) {
+            font-size: 18px;
+            line-height: 23px;
+          }
+        }///.btn
+      }///.filters
+    }///.grid-capabilities
+  }
+
+
+  // Timeline
+  &-template-timeline {
+    #list-timeline {
+      display: none;
+      @include media-breakpoint-up(md) {
+        display: block;
+        width: 7rem;
+        padding-right:0;
+        border-right: 1px solid $primary;
+        list-style: none;
+      }
+      .list-group-item {
+        color: $white;
+        background-color: transparent;
+        border:0;
+        font-family: $font-bold;
+        font-size: 16px;
+        letter-spacing: .1rem;
+        margin-left:0;
+        @include media-breakpoint-up(lg) {
+          font-size: 18px;
+        }
+        &.active, &:hover, &.current-year {
+          font-family: $font-bold;
+          color: $cyan;
+            &::after {
+              content: '';
+              position: absolute;
+              right: 0;
+              top: 11px;
+              border-top: 8px solid transparent;
+              border-right: 11px solid $cyan;
+              border-bottom: 8px solid transparent;
+          }
+        }
+
+      }
+    }
+    #list-timeline.list-color-blue {
+      .list-group-item:active, .list-group-item:hover, .list-group-item.current-year {
+        color: $primary;
+        &::after {
+          border-right-color: $primary;
+        }
+    }
+  }
+    .timeline-piece {
+      display: flex;
+      padding-top: 50px;
+      padding-bottom: 56px;
+      padding-left: 6vw;
+      align-items: center;
+      @include media-breakpoint-up(md) {
+        padding-top: 80px;
+      }
+      h5, h1, h3 {
+        // font-family: $font-bold;
+        text-transform: uppercase;
+      }
+      h5 {
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: 0.20px;
+        @include media-breakpoint-up(md) {
+          font-size: 21px;
+          line-height: 24px;
+        }
+      }
+      h1 {
+        font-size: 35px;
+        line-height: 36px;
+        letter-spacing: 1px;
+        @include media-breakpoint-up(sm) {
+          font-size: 64px;
+          line-height: 50px;
+          letter-spacing: 3px;
+        }
+        @include media-breakpoint-up(md) {
+          font-size: 118px;
+          line-height: 110px;
+          letter-spacing: 5.9px;
+        }
+      }
+      h3 {
+        font-size: 24px;
+        line-height: 26px;
+        letter-spacing: 2.58px;
+        @include media-breakpoint-up(sm) {
+          font-size: 36px;
+          line-height: 46px;
+          letter-spacing: 4px;
+        }
+        @include media-breakpoint-up(md) {
+          font-size: 42px;
+          line-height: 56px;
+          letter-spacing: 4.58px;
+        }
+        &:after {
+          content: '';
+          position: relative;
+          display: block;
+          background-color: $secondary;
+          height: 4px;
+          width: 50px;
+          margin-top: 1rem;
+          margin-bottom: 2.25rem;
+
+        }
+      }
+      p {
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 0.6px;
+        margin-bottom: 1.5rem;
+        @include media-breakpoint-up(sm) {
+          font-size: 20px;
+          line-height: 30px;
+        }
+        @include media-breakpoint-up(md) {
+          font-size: 24px;
+          line-height: 36px;
+        }
+      }
+      .timeline-btn {
+        @include button-outline-variant($color: $white);
+        display: block;
+        margin-bottom: 1.5rem;
+      }
+    }///.timeline-piece
+
+    .timeline-pt {
+      padding-top: 220px;
+      @include media-breakpoint-up(lg) {
+        padding-top: 380px;
+      }
+      @include media-breakpoint-up(xl) {
+        padding-top: 480px;
+      }
+
+      #list-timeline {
+        margin-top: -30%;
+        @include media-breakpoint-up(md) {
+          margin-top: -40%;
+        }
+        @include media-breakpoint-up(xl) {
+          margin-top: -30%;
+        }
+      }
+
+    }
+
+  }
+
+
+  // Alumni Hub
+  &-template-alumni-hub {
+    .banner--alumni-hub {
+      .banner-title {
+        padding-top: 340px;
+        @include media-breakpoint-up(lg) {
+          padding-top: 540px;
+        }
+      }
+      .banner-text {
+        margin-bottom: 0;
+        padding-bottom: 56px;
+      }
+    }
+    p {
+      font-size: 18px;
+      line-height: 26px;
+      letter-spacing: 0.6px;
+      @include media-breakpoint-up(sm) {
+        font-size: 20px;
+        line-height: 30px;
+      }
+      @include media-breakpoint-up(md) {
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
+    .image-link {
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 1.6px;
+      @include media-breakpoint-up(lg) {
+        font-size: 33px;
+        line-height: 43px;
+        letter-spacing: 3.6px;
+      }
+    }
+  }
+
+
+  // Opportunities
+  &-template-opportunities {
+    p {
+      font-size: 18px;
+      line-height: 26px;
+      letter-spacing: 0.6px;
+      @include media-breakpoint-up(sm) {
+        font-size: 20px;
+        line-height: 30px;
+      }
+      @include media-breakpoint-up(md) {
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
+    .opportunities-list {
+      list-style: none;
+      margin-left:0;
+      padding-left:0;
+      overflow: hidden;
+      li {
+        display: inline-block;
+      }
+      a {
+        text-decoration: none;
+        color: $cyan;
+        padding: 1rem;
+        font-family: $font-bold;
+        font-size: 1.5rem;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  // Profile
+  &-template-profile {
+    nav.sticky-header-container {
+      opacity: 1!important;
+      line-height: 24px;
+      .logo-dark {display:none;}
+      .logo-profile {
+        display: block !important;
+      }
+      .logo.navbar-brand {
+        flex:0;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        @include media-breakpoint-up(lg) {
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+      }
+      .navbar-toggler[aria-expanded="true"] {
+        align-self: start;
+        margin-top: 0.2rem;
+      }
+    }
+
+
+    header {
+      .logo {
+        display: none;
+      }
+      .header-links-inner {display: none;}
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 26px;
+      letter-spacing: 0.6px;
+
+      @include media-breakpoint-up(sm) {
+        font-size: 20px;
+        line-height: 30px;
+      }
+
+      @include media-breakpoint-up(md) {
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
+
+    .profile-header {
+      background-position: left !important;
+
+      @include media-breakpoint-up(lg) {
+        background-position: center !important;
+      }
+
+      .profile-header-card {
+        padding: 28px 30px 40px;
+
+        @include media-breakpoint-up(lg) {
+          padding: 32px 40px 56px;
+        }
+      }///.profile-header-card
+
+      .banner-title {
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: 3.58px;
+
+        @include media-breakpoint-up(sm) {
+          font-size: 30px;
+          line-height: 50px;
+          letter-spacing: 4px;
+        }
+
+        @include media-breakpoint-up(md) {
+          font-size: 42px;
+          line-height: 56px;
+          letter-spacing: 4.58px;
+        }
+      }///.banner-title
+    }
+
+    .list-group-flush {
+      margin-bottom: 1.5rem;
+      .list-group-item:last-child {
+        border-bottom: 1px solid $black;
+      }
+    }
+
+  }
+
+  &-template-careers {
+    .banner-sub {
+      color: $cyan;
+      font-size: 1.75rem;
+      font-family: $font-normal;
+
+      @include media-breakpoint-up(sm) {
+        font-size: 2rem;
+      }
+
+      @include media-breakpoint-up(md) {
+        font-size: 2.5rem;
+      }
+    }
+  }// Careers
+
+}
+
+.contact-box {
+  flex: 0 0 925px;
+  padding-left: 140px;
+}
+
+.contact-form {
+  .form-label {
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.45px;
+  }
+
+}
+///.contact-form
+.form-control, .form-select {
+  border-radius: 0;
+  border: 1px solid #A2A2A2;
+  box-shadow: none;
+
+  // border-radius: 4px;
+  // box-shadow: inset 0px 4px 1px $gray-200;
+}
+
+
+// Alumi Pages and Job Board
+.row-grid-three, .row-grid-four {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  column-gap: 1rem;
+  row-gap: 1rem;
+  justify-items: stretch;
+
+  @include media-breakpoint-up(md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .post {
+    justify-self: stretch;
+    display: inline-grid;
+    .read-more {
+      align-self: end;
+    }
+  }
+}
+
+.row-grid-three {
+  @include media-breakpoint-up(lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.row-grid-four {
+  @include media-breakpoint-up(lg) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.alumni-updates .row-grid-three .post {
+  align-content: start;
+}
+
+@media (min-width:978px) {
+    .profile-padding {
+      padding-top: 93px !important;
+    }
+} // Profile
+//Subscribe
+.subscribe-form {
+
+  .grid-x {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .wpcf7-form-control-wrap {
+    position: relative;
+    width: 100% !important;
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+
+  input[type="text"], input[type="email"]{
+    height: 3.125rem;
+    width: 100% !important;
+    padding-left: 20px;
+    border: 1px solid #cacaca;
+    box-shadow: inset 0 1px 2px rgb(10 10 10 / 10%);
+  }
+
+  h2{
+    color: #199ad6;
+    text-transform: none;
+    padding: 30px 0;
+  }
+
+  input[type="submit"]{
+    background: #199ad6;
+    color: white;
+    padding: 5px 20px;
+    border: 0;
+  }
+
+  span.wpcf7-list-item{
+    width: 30%;
+    margin-bottom: 15px;
+
+    .wpcf7-list-item-label{
+      margin-left: 8px;
+    }
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .grid-x > .medium-6 {
+    width: 50%;
+  }
+
+  .grid-padding-x>.cell {
+    padding-right: .9375rem;
+    padding-left: .9375rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+
+  .subscribe-form span.wpcf7-list-item{
+    width: 45%;
+  }
+
+}
+
+@media screen and (max-width: 620px) {
+
+  .subscribe-form span.wpcf7-list-item{
+    width: 100%;
+  }
+
+}

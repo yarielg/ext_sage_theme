@@ -1,0 +1,102 @@
+.component-quote-banner {
+	background-color: #000;
+	position: relative;
+	color: #fff;
+	text-align: center;
+	margin-top: 60px;
+
+	.background-overlay {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: absolute; 
+		top: 0; 
+		left: 0; 
+		width: 100%; 
+		height: 100%; 
+		z-index: 1;
+	}
+
+	.quote-content {
+		position: relative; 
+		z-index: 2;
+	}
+
+	.quote {
+		font-family: $font-bold;
+		font-size: 32px;
+		line-height: 40px;
+		letter-spacing: 1.1px;
+		margin-bottom: 2.25rem;
+
+		@include media-breakpoint-up(md) {
+			font-size: 42px;
+			line-height: 42px;
+			letter-spacing: 2.1px;
+			padding: 0 110px;
+		}
+
+		&:after,
+		&:before {
+			content: '';
+			position: relative;
+			width: 60px;
+			height: 4px;
+			background-color: $white;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		&:before {
+			margin-bottom: 2.25rem;
+		}
+
+		&:after {
+			margin-top: 2.25rem;
+		}
+	} // .quote
+
+	.quote-author {
+		font-family: $font-bold;
+		font-size: 30px;
+		line-height: 36px;
+		letter-spacing: 4.69px;
+		
+		@include media-breakpoint-up(sm) {
+			font-size: 36px;
+			line-height: 40px;
+		}
+		
+		@include media-breakpoint-up(md) {
+			font-size: 43px;
+			line-height: 44px;
+		}
+	}
+
+	.quote-title {
+		font-family: $font-light;
+		font-size: 27px;
+		line-height: 34px;
+		letter-spacing: 3.6px;
+		
+		@include media-breakpoint-up(sm) {
+			font-size: 30px;
+			line-height: 37px;
+		}
+		
+		@include media-breakpoint-up(md) {
+			font-size: 33px;
+			line-height: 44px;
+		}
+	} // .quote-title
+
+	&.text-dark,&.text-black {
+		.quote {
+			&:after,&:before {
+				background-color: $black;
+			}
+		}
+	}
+
+} // .quote-banner

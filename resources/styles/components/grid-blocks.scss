@@ -1,0 +1,21 @@
+.component-grid-blocks {
+	margin-top: 60px;
+
+	.grid-block {
+		height: 100%;
+
+		h2 { 
+			text-transform: uppercase;
+			display: flex;
+			align-items: center;
+		}
+	}
+
+	.grid-block--color-scheme-light-gray { background: $gray-200; color: $black; }
+
+	.grid-block--color-scheme-light-blue { background: $teal; color: $black; }
+
+	.grid-block--color-scheme-blue { background: $blue; color: $white; }
+
+	.grid-block--color-scheme-gold { background: $yellow; color: $white; }
+}

@@ -1,0 +1,120 @@
+.component-quote-cards {
+    margin-top: 60px;
+}
+
+.quote-card {
+    color: #fff;
+
+    &--color-light-blue { background-color: $teal; color: #000; }
+
+    &--color-blue { background-color: $blue; }
+
+    &--color-gold { background-color: $yellow; }
+
+    &--color-gray { background-color: $gray-500; }
+
+    .quote-card--container {
+        height: 100%;
+        position: relative;
+        max-width: 364px;
+        margin: 0 auto;
+    }
+
+    .quote-card--content {
+        padding: 30px 44px;
+        position: relative;
+    }
+
+    .card-title {
+        font-family: $font-bold;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.45px;
+        margin-bottom: 0.75rem;
+        flex: 0 1 100%;
+        
+        @include media-breakpoint-up(md) {
+            font-size: 18px;
+            line-height: 24px;
+        }
+        
+        @include media-breakpoint-up(lg) {
+            // margin-bottom: 0;
+            // flex: unset;
+        }
+    }
+
+    .card-subtitle {
+        text-transform: uppercase;
+        font-family: $font-bold;
+        font-size: 28px;
+        line-height: 32px;
+        letter-spacing: 1.6px;
+        margin-bottom: 60px;
+        
+        @include media-breakpoint-up(sm) {
+            font-size: 30px;
+            line-height: 34px;
+        }
+        
+        @include media-breakpoint-up(md) {
+            font-size: 32px;
+            line-height: 36px;
+            // margin-bottom: 120px;
+        }
+    }
+
+    .card-body {
+        align-self: baseline;
+        padding: 0;
+        
+        p {
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0.45px;
+            margin-bottom: 0.75rem;
+            
+            @include media-breakpoint-up(md) {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+.quote-icon {
+    position: absolute;
+    right: -23px;
+    opacity: 0.15;
+    top: -1rem;
+}
+
+.section-24 {
+    .row .gx-4 {
+        display: flex;
+        align-items: stretch;
+    }
+
+    .quote-card--image {
+        width: 100%;
+    }
+
+    .quote-card {
+        height: auto;
+    }
+
+    .card-body p {
+        padding-bottom: 1rem;
+    }
+
+    a.btn.btn-link {
+        color: inherit;
+        border: 0;
+        text-decoration: none;
+        font-size: 16px;
+        
+        @include media-breakpoint-up(md) {
+            font-size: 18px;
+        }
+    }
+}

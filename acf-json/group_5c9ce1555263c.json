@@ -1,0 +1,72 @@
+{
+    "key": "group_5c9ce1555263c",
+    "title": "Alumni Access",
+    "fields": [
+        {
+            "key": "field_5c9ce15fa905d",
+            "label": "Page Access",
+            "name": "alumni_access",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Choose the access level for this Alumni page. Users without the proper access will be redirected to the Alumni Login page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "public": "Public",
+                "restricted": "Alumni-Only"
+            },
+            "default_value": "public",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-alumni-directory.blade.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-alumni-hub.blade.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-alumni-updates.blade.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-job-board.blade.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1670805281
+}

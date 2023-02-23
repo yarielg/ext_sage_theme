@@ -1,0 +1,62 @@
+{
+    "key": "group_5ad10c4b9231b",
+    "title": "Service Industry Sectors",
+    "fields": [
+        {
+            "key": "field_5ea9d6d224d59",
+            "label": "Industry Sectors Tab Title",
+            "name": "service_industry_sectors_tab_title",
+            "type": "text",
+            "instructions": "Optionally override the default tab title \"Industry Sectors\"",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5ad10c573f8eb",
+            "label": "Industry Sectors Tab Content",
+            "name": "service_industry_sectors",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "services"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1588189004
+}

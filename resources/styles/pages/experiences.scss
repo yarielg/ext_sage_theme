@@ -1,0 +1,48 @@
+.experience-content, .new-content, .event-content{
+  @include media-breakpoint-up(md) {
+    font-size: 20px;
+    line-height: 34px;
+  }
+
+  h5{
+    color: #365e91;
+    font-size: 24px;
+    letter-spacing: 1.2px;
+    line-height: 34px;
+    text-transform: uppercase;
+  }
+}
+
+
+.sidebar-experiences, .sidebar-news, .sidebar-events {
+
+  .accordion-body{
+     a {
+      @include media-breakpoint-up(md) {
+         font-size: 18px;
+         line-height: 26px;
+      }
+      &:hover {
+         color: $cyan;
+      }
+      color: #333;
+      display: inline-block;
+      margin-bottom: 11px;
+      font-family: NeueHelvetica55Roman,Trebuchet MS,Verdana,sans-serif;
+      text-decoration: none;
+    }
+  }
+
+  .accordion-header
+
+    .accordion-button{
+      color: #333;
+      font-family: NeueHelvetica75Bold,Trebuchet MS,Verdana,sans-serif;
+
+      @include media-breakpoint-up(md) {
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
+}
+

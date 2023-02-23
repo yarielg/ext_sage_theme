@@ -1,0 +1,12 @@
+/node_modules
+/vendor
+/public
+.env
+.budfiles
+npm-debug.log
+yarn-error.log
+*ai1wm-backups
+plugins/all-in-one-wp-migration-unlimited-extension
+plugins/all-in-one-wp-migration
+uploads/all-in-one-wp-migration-unlimited-extension.zip
+/uploads/all-in-one-wp-migration.zip

@@ -1,0 +1,255 @@
+.footer-container {
+  display: block;
+
+  * {
+    color: $white;
+    font-size: 18px;
+  }
+
+  .list-group-item.twitter-accounts-trigger{
+    position: relative;
+
+    .twitter-accounts{
+      position: absolute;
+      list-style: none;
+      background: white;
+      z-index: 10001;
+      bottom: 65px;
+      left: -52px;
+      padding: 0;
+      text-align: center;
+
+      .triangle{
+        clip-path: polygon(66% 0, 0 0, 35% 29%);
+        background: white;
+        width: 25px;
+        height: 34px;
+        position: absolute;
+        left: calc(50% - 8px);
+      }
+
+      span{
+        background: black;
+        color: white;
+        padding: 3px;
+        font-size: 0.8rem;
+        display: block;
+      }
+
+      li{
+
+        padding: 5px 15px;
+
+        a{
+          color: black;
+          font-size: 0.8rem;
+
+          &:hover {
+            color: #365e91;
+          }
+        }
+
+      }
+    }
+  }
+
+  .list-group-item {
+    border: none;
+    background: transparent;
+    padding: 0.5rem 1.5rem 0.5rem 0;
+
+
+
+    a {
+      text-transform: uppercase;
+      text-decoration: none;
+
+      &:hover {
+        color: $cyan;
+      }
+
+      img:hover{
+        border-radius: 50%;
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .footer-inner {
+    margin: 0 auto;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+
+    .logo img {
+      max-width: 275px;
+
+      @include media-breakpoint-up(sm) {
+        max-width: inherit;
+      }
+    }
+
+    .social-icons {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+
+      .social-network{
+          font-size: 1.25rem;
+          line-height: 44px;
+          border: 2px solid #979797;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 44px;
+          width: 44px;
+          border-radius: 50%;
+          cursor: pointer;
+          margin: 0;
+          padding: 0 !important;
+          color: #8c8a83 !important;
+
+          path{
+            color: #979797;
+          }
+
+          &:hover {
+            border: 2px solid $cyan;
+            background: $cyan;
+
+            path{
+              color: #FFF;
+            }
+
+        }
+
+      }
+
+      @include media-breakpoint-up(md) {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+
+      .list-group-item {
+        padding: 0.5rem 0.5rem 0.5rem 0;
+
+        @include media-breakpoint-up(sm) {
+          padding-left: 0.5rem;
+        }
+      }
+    }
+
+    .other-icons {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      justify-content: start;
+
+      @include media-breakpoint-up(md) {
+        justify-content: end;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+
+      .list-group-item {
+        padding: 0.5rem 0 0.5rem 1.5rem;
+
+        @include media-breakpoint-up(sm) {
+          padding-left: 3rem;
+        }
+
+        &:first-child {
+          padding-left: 0;
+        }
+
+        svg {
+          display: block;
+          width: 100%;
+          max-width: 130px;
+          max-height: 44px;
+          fill: #777;
+          transition: all 0.33s ease;
+        }
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+
+        &:hover {
+          svg { fill: #fff !important; }
+        }
+      }
+
+    }
+
+    .tagline {
+      font-family: $font-light;
+      font-size: 16px;
+      line-height: 24px;
+
+      @include media-breakpoint-up(md) {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+
+    .bottom-nav {
+      flex-wrap: wrap;
+      .list-group-item {
+        padding: 0.5rem 2.25rem 0.5rem 0;
+      }
+
+      a {
+        font-size: 18px;
+        font-family: $font-bold;
+      }
+    }
+
+    .extra-links {
+      justify-content: start;
+
+      @include media-breakpoint-up(md) {
+        justify-content: end;
+      }
+
+      .list-group-item {
+        padding: 0 .5rem;
+        border-left: 1px solid #777;
+        line-height: 15px;
+
+        @include media-breakpoint-up(sm) {
+          padding-right: 1rem;
+          padding-left: 1rem;
+        }
+
+        &:first-child {
+          border-left: none;
+          padding-left: 0;
+        }
+
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+
+      a {
+        font-size: 15px;
+        text-transform: none;
+        font-family: $font-light;
+        color: #777;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+
+    .copyright {
+      font-size: 15px;
+      font-family: $font-light;
+      color: #777;
+      margin-bottom: 0;
+      padding: 0;
+    }
+  }
+}

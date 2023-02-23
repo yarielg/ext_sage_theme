@@ -1,0 +1,68 @@
+{
+    "key": "group_5aff14247defa",
+    "title": "Professional Featured Experience",
+    "fields": [
+        {
+            "key": "field_5aff143d15b53",
+            "label": "Featured Experience",
+            "name": "professional_featured_experience",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "experience"
+            ],
+            "taxonomy": [],
+            "filters": [
+                "search"
+            ],
+            "elements": "",
+            "min": "",
+            "max": 5,
+            "return_format": "object"
+        },
+        {
+            "key": "field_5d5eaf6bc3a81",
+            "label": "Use Abstract for Breeze Docs",
+            "name": "breeze_use_abstract",
+            "type": "true_false",
+            "instructions": "Check to use the full \"abstract\" field content in Breeze Docs for these experience(s). If unchecked, the first 20 words of the experiences' main body\/description content will be used.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "professionals"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1566486863
+}

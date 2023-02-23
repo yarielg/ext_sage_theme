@@ -1,0 +1,520 @@
+.banner {
+  background-color: $blue;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .banner-title {
+      padding-top: 300px;
+    }
+}
+
+.section-3 {
+  @include media-breakpoint-up(lg) {
+    background-repeat: no-repeat !important;
+  }
+  .banner-title {
+    text-transform: uppercase;
+    // font-family: $font-bold;
+    font-size: 45px;
+    line-height: 55px;
+    @include media-breakpoint-up(md) {
+      font-size: 80px;
+      line-height: 70px;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 116px;
+      line-height: 108px;
+    }
+  }
+
+  .banner-btn {
+    @include button-outline-variant($color: $white);
+    // font-family: $font-bold;
+  }
+}///.section-3
+
+
+.section-4 {
+  .banner-text {
+    @include media-breakpoint-up(xl) {
+      // margin-bottom: 70px;
+    }
+  }
+}///.section-4
+
+
+.text-center .banner-title {
+  &:after {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+
+
+.section-6 {
+  padding-top: 0;
+  padding-bottom: 0;
+  @include media-breakpoint-up(xl) {
+    padding-top: 5.5rem;
+    padding-bottom: 5.5rem;
+  }
+}///.section-6
+
+.section-6,
+.section-11,
+.section-18 {
+  div[class*='col'] {
+    background-color: $white;
+    border: 4px solid $dark;
+    border-right-width: 0;
+  }
+}///.section-6
+
+
+.section-8 {
+  .icon-card .btn-link {
+    font-family: $font-bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.45px;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.section-9 {
+  @extend .section-7;
+  .btn-link {
+    font-family: $font-bold;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.53px;
+    @include media-breakpoint-up(md) {
+      font-size: 21px;
+      line-height: 24px;
+    }
+  }
+
+  .list-group-flush > .list-group-item:last-child {
+    border-bottom-width: 1px;
+  }
+
+  .list-group-item {
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.45px;
+    @include media-breakpoint-up(md) {
+      font-size: 21px;
+      line-height: 24px;
+    }
+  }
+
+  .image-link {
+    font-family: $font-bold;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.53px;
+    @include media-breakpoint-up(md) {
+      font-size: 21px;
+      line-height: 24px;
+    }
+  }
+}
+
+.section-10 {
+  .card-title h4 {
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.45px;
+    margin-bottom: 2rem;
+    @include media-breakpoint-up(md) {
+      font-size: 21px;
+      line-height: 24px;
+    }
+  }
+}
+
+.section-12 {
+  .banner-text {
+    text-align: left;
+    @include media-breakpoint-up(lg) {
+      padding: 0 50px;
+    }
+  }
+
+  .quote-icon {
+    position: absolute;
+    right: -23px;
+    opacity: 0.15;
+    top: 2rem;
+  }
+
+  .alumni-row {
+    padding: 0 12px;
+    @include media-breakpoint-up(lg) {
+      padding-right: 12px;
+    }
+  }
+
+  .name,
+  .btn-link {
+    font-family: $font-bold;
+    font-size: 16px;
+    line-height: 34px;
+    letter-spacing: 0.45px;
+    @include media-breakpoint-up(md) {
+      font-size: 18px;
+      line-height: 36px;
+    }
+  }
+  .name {
+    margin-bottom: 0;
+  }
+  .btn-link {
+    text-transform: uppercase;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .title {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 1.6px;
+    @include media-breakpoint-up(sm) {
+      font-size: 44px;
+      line-height: 30px;
+    }
+    @include media-breakpoint-up(md) {
+      font-size: 32px;
+      line-height: 36px;
+    }
+  }
+  p.paragraph {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.45px;
+    margin-bottom: 1rem;
+    @include media-breakpoint-up(md) {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+  .alumni-pic {
+    flex: 0 0 auto;
+    width:100%;
+    @include media-breakpoint-up(md) {
+      width: auto;
+    }
+    & img {
+      max-width:100%;
+      height:auto;
+      width:100%;
+    }
+  }
+}
+
+
+// .section-14,
+// .section-24 {
+//   .quote-card {
+//     height: 100%;
+//     .card-title {
+//       font-family: $font-bold;
+//       font-size: 16px;
+//       line-height: 20px;
+//       letter-spacing: 0.45px;
+//       margin-bottom: 0.75rem;
+//       flex: 0 1 100%;
+//       @include media-breakpoint-up(md) {
+//         font-size: 18px;
+//         line-height: 24px;
+//       }
+//       @include media-breakpoint-up(lg) {
+//         // margin-bottom: 0;
+//         // flex: unset;
+//       }
+//     }
+//     .card-subtitle {
+//       text-transform: uppercase;
+//       font-family: $font-bold;
+//       font-size: 28px;
+//       line-height: 32px;
+//       letter-spacing: 1.6px;
+//       margin-bottom: 60px;
+//       @include media-breakpoint-up(sm) {
+//         font-size: 30px;
+//         line-height: 34px;
+//       }
+//       @include media-breakpoint-up(md) {
+//         font-size: 32px;
+//         line-height: 36px;
+//         // margin-bottom: 120px;
+//       }
+//     }
+//     .card-body {
+//       align-self: baseline;
+//       padding: 0;
+//       p {
+//         font-size: 16px;
+//         line-height: 20px;
+//         letter-spacing: 0.45px;
+//         margin-bottom: 0.75rem;
+//         @include media-breakpoint-up(md) {
+//           font-size: 18px;
+//           line-height: 24px;
+//         }
+//       }
+//     }
+//   }
+//   .quote-icon {
+//     position: absolute;
+//     right: -23px;
+//     opacity: 0.15;
+//     top: -1rem;
+//   }
+// }
+
+.section-15 {
+  .banner-title:after {
+    background-color: $white;
+  }
+
+  .card-title {
+    margin-bottom: 0;
+    h4 {
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.45px;
+      text-transform: uppercase;
+      margin-bottom: 32px;
+      @include media-breakpoint-up(md) {
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+  }
+}///.section-15
+
+.section-16 {
+  padding-bottom: 8rem;
+  .text-center.text-white > h2.banner-title::before {
+    border-bottom-color: $cyan;
+  }
+  .banner-text {
+    letter-spacing: 0.6px;
+    // margin-bottom: 64px;
+    text-align: left;
+    @include media-breakpoint-up(lg) {
+      padding: 0 50px;
+    }
+  }
+}
+
+// .section-17 {
+//   h2.banner-title {
+//     // font-family: $font-bold;
+//     font-size: 36px;
+//     line-height: 48px;
+//     letter-spacing: 4.58px;
+//     @include media-breakpoint-up(sm) {
+//       font-size: 40px;
+//       line-height: 50px;
+//     }
+//     @include media-breakpoint-up(md) {
+//       font-size: 42px;
+//       line-height: 56px;
+//     }
+//   }
+// }
+
+.opp-links {
+  padding: 0;
+  &>.row {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}///.opp-links
+
+.section-19 {
+  .text-white.text-center > h2.banner-title.text-white.before-grey::before {
+    border-bottom-color: $gray-500;
+  }
+  .banner-text {
+    text-align: left;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.6px;
+    // margin-bottom: 36px;
+    @include media-breakpoint-up(sm) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    @include media-breakpoint-up(md) {
+      font-size: 24px;
+      line-height: 36px;
+    }
+    @include media-breakpoint-up(lg) {
+      padding: 0 50px;
+    }
+  }
+  .btn {
+    border-color: $gray-500;
+    color: $white;
+    &:hover {
+      color: $gray-500;
+    }
+  }
+}
+
+.section-20 {
+  h2.before-cyan.banner-title::before {
+    border-bottom-color: $cyan;
+  }
+  .banner-text {
+    text-align: left;
+    @include media-breakpoint-up(lg) {
+      text-align: center;
+    }
+  }
+
+  .row-cols-1 > .col {
+    padding-left:0;
+    padding-right:0;
+    @include media-breakpoint-up(lg) {
+      padding-right:3rem;
+      &:last-child {
+        padding-right:0;
+      }
+    }
+  }
+}
+
+.section-21 {
+  .accordion-item {
+    margin-bottom: 2.25rem;
+    border: 1px solid #a2a2a2;
+    border-bottom: 4px solid $secondary;
+  }
+
+  .accordion-body {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.6px;
+    padding: 28px 24px 60px;
+    @include media-breakpoint-up(sm) {
+      font-size: 21px;
+      line-height: 32px;
+      padding: 32px 36px 50px;
+    }
+    @include media-breakpoint-up(md) {
+      font-size: 24px;
+      line-height: 36px;
+      padding: 36px 48px 40px;
+    }
+  }
+
+  .accordion-button {
+    font-family: $font-bold;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.6px;
+    color: $black;
+    &:not(.collapsed) {
+      background-color: unset;
+    }
+    @include media-breakpoint-up(sm) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    @include media-breakpoint-up(md) {
+      font-size: 24px !important;
+      line-height: 36px;
+    }
+  }
+}
+
+.section-23 {
+  h4 {
+    // font-family: $font-bold;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    margin-bottom: 2.25rem;
+    @include media-breakpoint-up(sm) {
+      font-size: 28px;
+      line-height: 33px;
+    }
+    @include media-breakpoint-up(md) {
+      font-size: 32px;
+      line-height: 36px;
+    }
+  }
+
+  a.btn {
+    width: auto;
+    color: $black;
+    border: 2px solid $black;
+    padding: 13px 26px;
+    font-family: $font-bold;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.87px;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    @include media-breakpoint-up(md) {
+      padding: 17px 30px;
+      font-size: 23px;
+      line-height: 28px;
+    }
+  }
+  .text-white a.btn {
+    color: $white;
+    border-color: $white;
+  }
+}
+
+
+
+.section-media-contacts .row-cols-1 {
+  display: flex;
+  justify-content: center;
+  .col {
+    padding:2rem;
+    @include media-breakpoint-up(sm) {
+      flex-grow: 1;
+    }
+    @include media-breakpoint-up(lg) {
+      padding-right: 5rem;
+    }
+  }
+}
+
+.locations-card {
+  margin-bottom: 2rem;
+  .image-link {
+    margin-bottom: 1rem;
+  }
+  h5 {
+    text-transform: uppercase;
+    color: $blue;
+    letter-spacing: .1rem;
+  }
+  .btn.btn-link {
+    display: block;
+    font-family: $font-normal;
+    letter-spacing: 0.06rem;
+    margin-bottom: 1rem;
+    &:hover {
+      text-decoration: underline;
+
+    }
+  }
+}

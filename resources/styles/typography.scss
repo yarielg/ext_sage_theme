@@ -1,0 +1,350 @@
+@font-face {
+  font-family: interstate-regular;
+  src: url("../fonts/interstate/Interstate-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: interstate-light;
+  src: url("../fonts/interstate/Interstate-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: interstate-bold;
+  src: url("../fonts/interstate/Interstate-Bold.woff") format("woff");
+}
+
+$header-reg: interstate-regular, sans-serif;
+$header-lite: interstate-light, sans-serif;
+$header-bold: interstate-bold, sans-serif;
+
+$font-family-sans-serif: "NeueHelvetica55Roman", Trebuchet MS, Verdana, sans-serif;
+$font-family-sans-serif-light: "NeueHelvetica45Light", Trebuchet MS, Verdana, sans-serif;
+$font-family-sans-serif-bold: "NeueHelvetica75Bold", Trebuchet MS, Verdana, sans-serif;
+
+$font-normal: "NeueHelvetica55Roman", Trebuchet MS, Verdana, sans-serif;
+$font-light: "NeueHelvetica45Light", Trebuchet MS, Verdana, sans-serif;
+$font-bold: "NeueHelvetica75Bold", Trebuchet MS, Verdana, sans-serif;
+
+body {
+  font-family: $font-normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $header-bold;
+}
+
+.fa-solid {
+  color: inherit;
+  font-family: "Font Awesome 6 Free" !important;
+}
+
+a:hover,
+.btn:hover {
+  transition: all 0.3s ease;
+}
+
+*:focus:not(:focus-visible) {
+  outline: none !important;
+}
+
+[type=button], [type=reset], [type=submit], button {-webkit-appearance:none;}
+
+.btn {
+  border: 1px solid $black;
+  color: $blue;
+  text-transform: uppercase;
+  font-family: $font-normal;
+  letter-spacing: .1rem;
+  padding: 16px 26px 12px;
+  font-size: 12px;
+  line-height: 1;
+
+  &:hover {
+    color: $white;
+    background-color: $black;
+  }
+
+  // @include media-breakpoint-up(sm) {
+  //   font-size: 20px;
+  //   padding: .5rem 1.1rem .3rem 1.1rem;
+  // }
+
+  // @include media-breakpoint-up(md) {
+  //   font-size: 23px;
+  //   // padding: 0.6rem 1.2rem 0.3rem 1.2rem;
+  //   padding: 14px 20px 8px;
+  // }
+}
+
+.btn-primary {
+  color: $white;
+}
+
+.btn-link {
+  border:0;
+  text-align: left;
+  text-decoration: none;
+  font-size: 70%;
+  &:hover {
+    opacity: .5;
+    background-color: inherit;
+  }
+  @include media-breakpoint-up(sm) {
+    font-size: 80%;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 100%;
+  }
+}
+
+.banner--job-board .btn.btn-lg.banner-btn:hover {
+  color: $blue;
+}
+
+.text-secondary {
+  font-size: 18px;
+}
+
+h2.banner-title {
+  font-size: 26px;
+  line-height: 43px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding-bottom: 1rem;
+  position: relative;
+  @include media-breakpoint-up(sm) {
+    font-size: 35px;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 42px;
+    line-height: 56px;
+    letter-spacing: 5px;
+  }
+}
+h2.banner-title::before{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    border-bottom: 4px solid $cyan;
+}
+.text-center h2.banner-title {
+  margin-bottom:2rem;
+    &::before {
+      right:0;
+      margin: 0 auto;
+  }
+}
+
+.text-center.text-white h2.banner-title::before {
+  border-bottom-color: $white;
+}
+
+h2:not(.banner-title) {
+  text-transform: uppercase;
+  height: 100%;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 1.6px;
+  padding: 30px 34px;
+  @include media-breakpoint-up(sm) {
+    font-size: 28px;
+    line-height: 30px;
+    padding: 32px 38px;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 32px;
+    line-height: 36px;
+    padding: 36px 40px;
+  }
+}
+
+h4, .h4 { text-transform: uppercase; }
+
+.banner-text {
+  font-family: $font-light;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.8px;
+  padding: 1.25rem 0;
+
+  @include media-breakpoint-up(md) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.image-link.bg-primary > .image-text:hover {
+  color:$gray-500;
+}
+
+
+
+// Accordions
+.accordion-item {
+  border:0;
+  border-bottom: 4px solid #199ad6;
+}
+
+.accordion-button {
+  border-top: 1px solid #525252;
+  border-right: 1px solid #525252;
+  border-left: 1px solid #525252;
+  padding: 1.2rem 2.5rem 1.2rem 2rem;
+
+  &[aria-expanded="true"] {
+    border-bottom:1px solid #525252;
+  }
+
+  &[aria-expanded="false"] {
+    border-bottom:0;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding:1.2rem 2.5rem 1.2rem 1.2rem;
+  }
+}
+
+h2:not(.banner-title).accordion-header {
+  padding:0;
+}
+
+.accordion-button:not(.collapsed) {
+  box-shadow:none;
+}
+
+.accordion-button::after, .accordion-button:not(.collapsed)::after  {
+  display: block;
+  position: absolute;
+  background: none;
+  transform: none;
+  font-size: 2.25rem;
+  font-family: $font-normal;
+  color: #199ad6;
+  height: auto;
+  right:1rem;
+  @include media-breakpoint-up(sm) {
+    right:2rem;
+  }
+}
+
+.accordion-button::after {
+  content: "+";
+}
+.accordion-button:not(.collapsed)::after {
+  content: "_";
+  font-size: 2.25rem;
+  padding-bottom: 2rem;
+}
+
+.accordion-button:focus, .accordion-button:hover {
+  border-color:inherit;
+  box-shadow: none;
+
+  &::after {
+    content: "_"!important;
+    font-size: 2.25rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.accordion-collapse.show {
+  background-color: #fff;
+  border-top:1px solid #525252;
+  border-right: 1px solid #e8e8e8;
+  border-left: 1px solid #e8e8e8;
+  border-bottom:0;
+}
+.services-sidebar {
+  .accordion-collapse .accordion-body {
+    padding:1rem;
+  }
+}
+
+// Carousel
+
+.carousel-control-prev, .carousel-control-next {
+  font-size: 1rem;
+  color: $white;
+  opacity: 1!important;
+  width: 6%!important;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 2.5rem;
+    width: 6%!important;
+  }
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  height: auto;
+  background-image: none;
+}
+
+.filters-label {
+  font-size: 1rem;
+
+  @include media-breakpoint-up(sm) {
+    font-size: 1.05rem;
+  }
+
+  @include media-breakpoint-up(md) {
+    font-size: 1.13rem;
+  }
+}
+
+.form-label {
+  margin-bottom: 0;
+}
+
+.pagination {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.job-board {
+  .post-title {
+    font-family: $font-bold;
+    font-size: 1rem;
+    line-height: 1.1;
+
+    @include media-breakpoint-up(sm) {
+      font-size: 1.25rem;
+    }
+    
+    @include media-breakpoint-up(md) {
+      font-size: 1.5rem;
+    }
+  }
+  .read-more {padding-bottom: 0;}
+}
+
+.container-fluid.border-bottom.border-secondary.border-4 {
+  box-shadow: 0 4px 4px #dedede;
+}
+
+.list-group-flush {
+  margin-left: 0;
+}
+.page .fw-bold {
+  font-family: $font-normal!important;
+}
+
+// WP Editor Classes (Legacy site)
+.alignright {
+    float: right;
+    padding-left: 1rem;
+    margin: 0;
+}
+
+.alignleft {
+    float: left;
+    padding-right: 1rem;
+    margin: 0;
+}

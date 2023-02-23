@@ -1,0 +1,84 @@
+{
+    "key": "group_5c9cfefb1c7fd",
+    "title": "Alumni Options",
+    "fields": [
+        {
+            "key": "field_5c9cff4b650e4",
+            "label": "Show in Alumni Portal?",
+            "name": "alumni_post",
+            "type": "true_false",
+            "instructions": "Check if this post should be included in the Alumni portal.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5c9cffd2650e7",
+            "label": "Show only for Alumni?",
+            "name": "alumni_restricted_post",
+            "type": "true_false",
+            "instructions": "Check if this should ONLY be shown to Alumni members.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c9cff4b650e4",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "news"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "events"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "experience"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1565034613
+}
